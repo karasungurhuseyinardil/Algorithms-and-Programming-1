@@ -1,0 +1,266 @@
+//COME107 Week5
+//Example1-v1
+//Write a C++ program that takes two number and a character 
+//(e.g. 's' for sumation and 'm' for multiplication) from user 
+//and display the calculated result.
+//Note: Use if contol structure
+
+//#include<iostream>
+//using namespace std;
+//
+//int main()
+//{
+//	double number1, number2;
+//	char value;
+//
+//	cout << "Enter two numbers:";
+//	cin >> number1 >> number2;
+//
+//	cout << "Sumation(s) or Multiplication(m)?";
+//	cin >> value;
+//
+//	if (value == 's')
+//	{
+//		cout << "Sumation result:" << number1 + number2 << endl;
+//	}
+//	if (value == 'm')
+//	{
+//		cout << "Multiplication result:" << number1 * number2 << endl;
+//	}
+//	if (value != 's' && value != 'm')
+//	{
+//		cout << "You entered wrong character!" << endl;
+//	}
+//
+//	system("pause");
+//	return 0;
+//}
+//
+//Example1-v2.1
+//Write a C++ program that takes two number and a character 
+//(e.g. 's' for sumation and 'm' for multiplication) from user 
+//and display the calculated result.
+//Note: Use if...else contol structure
+
+//#include<iostream>
+//using namespace std;
+//
+//int main()
+//{
+//	double number1, number2;
+//	char value;
+//
+//	cout << "Enter two numbers:";
+//	cin >> number1 >> number2;
+//
+//	cout << "Sumation(s) or Multiplication(m)?";
+//	cin >> value;
+//
+//	if (value == 's')
+//	{
+//		cout << "Sumation result:" << number1 + number2 << endl;
+//	}
+//	else
+//	{
+//		if (value == 'm')
+//		{
+//			cout << "Multiplication result:" << number1 * number2 << endl;
+//		}
+//		else
+//		{
+//			cout << "You entered wrong character!" << endl;
+//		}
+//	}
+//	
+//	system("pause");
+//	return 0;
+//}
+
+//Example1-v2.2
+//Write a C++ program that takes two number and a character 
+//(e.g. 's' for sumation and 'm' for multiplication) from user 
+//and display the calculated result.
+//Note: Use if...else contol structure
+
+//#include<iostream>
+//using namespace std;
+//
+//int main()
+//{
+//	double number1, number2;
+//	char value;
+//
+//	cout << "Enter two numbers:";
+//	cin >> number1 >> number2;
+//
+//	cout << "Sumation(s) or Multiplication(m)?";
+//	cin >> value;
+//
+//	if (value == 's')
+//	{
+//		cout << "Sumation result:" << number1 + number2 << endl;
+//	}
+//	else if (value == 'm')
+//	{
+//		cout << "Multiplication result:" << number1 * number2 << endl;
+//	}
+//	else
+//	{
+//		cout << "You entered wrong character!" << endl;
+//	}
+//	
+//
+//	system("pause");
+//	return 0;
+//}
+//Example1-v3
+//Write a C++ program that takes two number and a character 
+//(e.g. 's' for sumation and 'm' for multiplication) from user 
+//and display the calculated result.
+//Note: Use switch contol structure
+//#include<iostream>
+//using namespace std;
+//
+//int main()
+//{
+//	double number1, number2;
+//	char value;
+//
+//	cout << "Enter two numbers:";
+//	cin >> number1 >> number2;
+//
+//	cout << "Sumation(s) or Multiplication(m)?";
+//	cin >> value;
+//
+//	switch (value)
+//	{
+//	case 's':
+//		cout << "Sumation result:" << number1 + number2 << endl;
+//		break;
+//
+//	case 'm':
+//		cout << "Multiplication result:" << number1 * number2 << endl;
+//		break;
+//
+//	default:
+//		cout << "You entered wrong character!" << endl;
+//		break;
+//	}
+//
+//	system("pause");
+//	return 0;
+//}
+
+//Example-extra1
+//Write a program that asks the user to enter two integers, obtains the numbers 
+//from the user, then prints the larger number followed by the words "is larger." 
+//If the numbers are equal, print the message “These numbers are equal.”
+
+//
+//#include <iostream>
+//
+//using std::cout;
+//using std::endl;
+//using std::cin;
+//
+//int main()
+//{
+//	int num1, num2; // declaration
+//	
+//	cout << "Enter two integers: "; // prompt
+//	cin >> num1 >> num2; // input to numbers
+//	
+//	if (num1 == num2)
+//		cout << "These numbers are equal." << endl;
+//	
+//	if (num1 > num2)
+//		cout << num1 << " is larger." << endl;
+//	
+//	if (num2 > num1)
+//		cout << num2 << " is larger." << endl;
+//	system("Pause");
+//	return 0;
+//}
+
+
+
+//Example-extra2
+//A company wants to transmit data over the telephone, but they are concerned that 
+//their phones may be tapped.All of their data are transmitted as four - digit 
+//integers.They have asked you to write a program that encrypts their data so that 
+//it can be transmitted more securely.Your program should read a four - digit integer
+//and encrypt it as follows : Replace each digit by(the sum of that digit plus 7) 
+//modulus 10. Then, swap the first digit with the third, swap the second digit with 
+//the fourth and print the encrypted integer.Write a separate program that inputs 
+//an encrypted four - digit integer and decrypts it to form the original number.
+
+
+//SolutionPart1
+//#include <iostream>
+//
+//using std::cout;
+//using std::endl;
+//using std::cin;
+//
+//int main()
+//{
+//	int first, second, third, fourth, digit, temp;
+//	int encryptedNumber;
+//	
+//	cout << "Enter a four digit number to be encrypted: ";
+//	cin >> digit;
+//	
+//	first = (digit / 1000 + 7) % 10;
+//	second = (digit % 1000 / 100 + 7) % 10;
+//	third = (digit % 1000 % 100 / 10 + 7) % 10;
+//	fourth = (digit % 1000 % 100 % 10 + 7) % 10;
+//	
+//	temp = first;
+//	first = third * 1000;
+//	third = temp * 10;
+//	
+//	temp = second;
+//	second = fourth * 100;
+//	fourth = temp * 1;
+//	
+//	encryptedNumber = first + second + third + fourth;
+//	cout << "Encrypted number is " << encryptedNumber << endl;
+//	
+//	system("Pause");
+//	return 0;
+//}
+
+//SolutionPart2
+
+//#include <iostream>
+//
+//using std::cout;
+//using std::endl;
+//using std::cin;
+//
+//int main()
+//{
+//	int first, second, third, fourth, decrypted, temp, num;
+//	
+//	cout << "Enter a four digit encrypted number: ";
+//	cin >> num;
+//	
+//	first = num / 1000;
+//	second = num % 1000 / 100;
+//	third = num % 1000 % 100 / 10;
+//	fourth = num % 1000 % 100 % 10;
+//	
+//	temp = (first + 3) % 10;
+//	first = (third + 3) % 10;
+//	third = temp;
+//	
+//	temp = (second + 3) % 10;
+//	second = (fourth + 3) % 10;
+//	fourth = temp;
+//	
+//	decrypted = first * 1000 + second * 100 + third * 10 + fourth;
+//	cout << "Decrypted number is " << decrypted << endl;
+//	system("Pause");
+//	return 0;
+//}
+
