@@ -1,0 +1,494 @@
+COME107-Week4
+
+
+Example 0.1
+Write a C++ program that takes a number from user and check whether 
+the number is positive or negative and displays the result.
+
+if (number > 0)
+{
+	cout << number << " is positive!"<<endl;
+}
+
+
+
+#include<iostream>
+using namespace std;
+
+using std::cout;
+using std::cin;
+using std::endl;
+int main()
+{
+	int number;
+	
+cout << "Enter a number:";
+	cin >> number;
+  if (number > 0)
+	{
+		cout << number << " is positive!"<< endl;
+	}
+	if (number == 0)	{
+		cout << number << " is zero!" << endl;
+	}
+
+	if (number < 0)
+	{
+		cout << number << " is negative!" << endl;
+	}
+
+	system("pause");
+	return 0;
+}
+
+
+Example 0.2
+Write a C++ program that takes two number from user and controls whether 
+the first number is greater than the second number or vice versa and displays the result.
+
+#include<iostream>
+using namespace std;
+
+
+int main()
+{
+	int x;
+	int y;
+
+	cout << "Enter first number:";
+	cin >> x;
+
+	cout << "Enter second number:";	cin >> y;
+
+	if (x > y)
+	{
+		cout << x << " is greater than " << y << endl;
+	}
+	if (x == y)
+	{
+		cout << x << " is equal to " << y << endl;
+	}
+	if (y > x)
+	{
+		cout << y << " is greater than " << x << endl;
+	}
+
+	system("pause");
+	return 0;
+}
+
+Example 0.3
+Write a C++ program that takes three number from user and finds the maximum 
+number. Then, the result should be displayed on the screen.
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int x;
+	int y;
+	int z;
+
+	cout << "Enter first number:";
+	cin >> x;
+
+	cout << "Enter second number:";
+	cin >> y;
+
+	cout << "Enter third number:";
+	cin >> z;
+
+	if (x > y)
+	{
+		if (x > z)
+    {
+			cout << x << " is maximum!" << endl;
+		}
+	}
+	if (y > x)
+	{
+		if (y > z)
+		{
+			cout << y << " is maximum'" << endl;
+		}
+	}
+	if (z > x)
+	{
+		if (z > y)
+		{
+			cout << z << " is maximum'" << endl;
+		}
+	}
+
+	system("pause");
+	return 0;
+}
+
+
+
+//Example1-v1
+//Write a C++ program that takes two number from user and controls whether 
+//the first number is greater than, equal, or less than the second one.
+//Your program should display the result on screen.
+//Note: Use if statement
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	double number1, number2;
+
+	cout << "Enter first number:";
+	cin >> number1;
+
+	cout << "Enter second number:";
+	cin >> number2;
+	
+	if (number1 > number2)
+	{
+		cout << number1 << " is greater than " << number2 << endl;
+	}
+	if (number1 == number2)
+	{
+		cout << number1 << " is equal to " << number2 << endl;
+	}
+	if (number1 < number2)
+	{
+		cout << number1 << " is less than " << number2 << endl;
+	}
+		
+	system("pause");
+	return 0;
+
+
+//Example1-v2
+//Write a C++ program that takes two number from user and controls whether 
+//the first number is greater than, equal, or less than the second one.
+//Your program should display the result on screen.
+//Note : Use if...else statement
+//#include<iostream>
+//using namespace std;
+//
+//int main()
+//{
+//	double number1, number2;
+//
+//	cout << "Enter first number:";
+//	cin >> number1;
+//
+//	cout << "Enter second number:";
+//	cin >> number2;
+//
+//	if (number1 > number2)
+//	{
+//		cout << number1 << " is greater than " << number2 << endl;
+//	}
+//	else
+//	{
+//		if (number1 == number2)
+//		{
+//			cout << number1 << " is equal to " << number2 << endl;
+//		}
+//		else
+//		{
+//			cout << number1 << " is less than " << number2 << endl;
+//		}
+//
+//	}
+//
+//	system("pause");
+//	return 0;
+//}
+
+//Example 2-v1
+//Write a C++ program that takes a number from user and controls whether the number is 
+//positive, or negative.Your program should display the result on screen.
+//Note : Use if statement
+
+//#include<iostream>
+//using namespace std;
+//
+//int main()
+//{
+//	double number;
+//
+//	cout << "Enter a number:";
+//	cin >> number;
+//	
+//	if (number > 0)
+//	{
+//		cout << number << " is positive." << endl;
+//	}
+//	if (number==0)
+//	{
+//		cout << number << " is equal to zero." << endl;
+//	}
+//	if (number < 0)
+//	{
+//		cout << number << " is negative."  << endl;
+//	}
+//		
+//	system("pause");
+//	return 0;
+//}
+
+//Example 2-v2
+//Write a C++ program that takes a number from user and controls whether the number is 
+//positive, or negative.Your program should display the result on screen.
+//Note : Use if...else statement
+//#include<iostream>
+//using namespace std;
+//
+//int main()
+//{
+//	double number;
+//
+//	cout << "Enter a number:";
+//	cin >> number;
+//
+//	if (number > 0)
+//	{
+//		cout << number << " is positive." << endl;
+//	}
+//	else
+//	{
+//		if (number == 0)
+//		{
+//			cout << number << " is equal to zero." << endl;
+//		}
+//		else
+//		{
+//			cout << number << " is negative." << endl;
+//		}
+//	}
+//
+//	system("pause");
+//	return 0;
+//}
+
+//Example3
+//Write a C++ program that takes an integer number from user and controls whether 
+//the number is odd, or even.Your program should display the result on screen.
+//Note : Use if...else statement
+
+//#include<iostream>
+//using namespace std;
+//
+//int main()
+//{    int number;
+//     int result;
+//
+//     cout << "Enter an integer number:";
+//     cin >> number;
+//	 
+//	 result = number % 2;
+//
+//     if (result==0)
+//     {
+//           cout << number << " is even!" << endl;
+//     }
+//     else
+//     {
+//           cout << number << " is odd!" << endl;
+//     }
+//	 
+//	 /*
+//     if (number%2 == 0)
+//     {
+//           cout << number << " is even!" << endl;
+//     }
+//     else
+//     {
+//           cout << number << " is odd!" << endl;
+//     }
+//	 */
+//
+//     system("pause");
+//     return 0;
+//}
+//
+
+
+//Example 4
+//Write a C++ program that takes three number from user and finds the maximum 
+//number. Then, the result should be displayed on the screen.
+
+//#include<iostream>
+//using namespace std;
+//
+//int main()
+//{
+//	int x;
+//	int y;
+//	int z;
+//
+//	cout << "Enter first number:";
+//	cin >> x;
+//
+//	cout << "Enter second number:";
+//	cin >> y;
+//
+//	cout << "Enter third number:";
+//	cin >> z;
+//
+//	if (x > y)
+//	{
+//		if (x > z)
+//		{
+//			cout << x << " is maximum!" << endl;
+//		}
+//	}
+//	if (y > x)
+//	{
+//		if (y > z)
+//		{
+//			cout << y << " is maximum'" << endl;
+//		}
+//	}
+//	if (z > x)
+//	{
+//		if (z > y)
+//		{
+//			cout << z << " is maximum'" << endl;
+//		}
+//	}
+//
+//	system("pause");
+//	return 0;
+//}
+
+//Example5-v1
+//Write a C++ program that takes three salaries of a factory workers and finds 
+//minimum and maximum salaries.Your program should display the results on screen.
+//#include<iostream>
+//using namespace std;
+//
+//int main()
+//{    int salary1, salary2, salary3;
+//
+//     cout << "Enter 3 salaries:";
+//     cin >> salary1 >> salary2 >> salary3;
+//
+//     int max, min;
+//
+//     //Maksimum hesaplama
+//     max = salary1;
+//     if (salary2 > max)
+//     {
+//           max = salary2;
+//     }
+//     if (salary3 > max)
+//     {
+//           max = salary3;
+//     }
+//     //Minimum hesaplama
+//     min = salary1;
+//     if (salary2 < min)
+//     {
+//           min = salary2;
+//     }
+//     if (salary3 < min)
+//     {
+//           min = salary3;
+//     }
+//
+//     cout << "Maximun salary: " << max << endl;
+//     cout << "Minimum salary: " << min << endl;
+//
+//     system("pause");
+//     return 0;
+//}
+
+//Example5-v2
+//Write a C++ program that takes three salaries of a factory workers and finds
+//#include<iostream>
+//using namespace std;
+//
+//int main()
+//{
+//     int salary1, salary2, salary3;
+//
+//     cout << "Enter 3 salaries:";
+//     cin >> salary1 >> salary2 >> salary3;
+//
+//     //Maksimum hesaplama
+//     if (salary1 >salary2 && salary1>salary3 )
+//     {
+//           cout << "Maximun salary:" << salary1 << endl;
+//     }
+//     if (salary2 >salary1 && salary2>salary3)
+//     {
+//           cout << "Maximun salary:" << salary2 << endl;
+//     }
+//     if (salary3 >salary1 && salary3>salary2)
+//     {
+//           cout << "Maximun salary:" << salary3 << endl;
+//     }
+//     //Minimum hesaplama
+//     if (salary1 <salary2 && salary1<salary3)
+//     {
+//           cout << "Minimum salary:" << salary1 << endl;
+//     }
+//     if (salary2 <salary1 && salary2<salary3)
+//     {
+//           cout << "Minimum salary:" << salary2 << endl;
+//     }
+//     if (salary3 <salary1 && salary3<salary2)
+//     {
+//           cout << "Minimum salary:" << salary3 << endl;
+//     }
+//
+//     system("pause");
+//     return 0;
+//}
+
+//Example5-v3
+//Write a C++ program that takes three salaries of a factory workers and finds 
+//minimum and maximum salaries.Your program should display the results on screen.
+//#include<iostream>
+//using namespace std;
+//
+//int main()
+//{
+//	int salary1, salary2, salary3;
+//	cout << "Version3" << endl;
+//	cout << "Enter 3 salaries:";
+//	cin >> salary1 >> salary2 >> salary3;
+//
+//	//Maksimum hesaplama
+//	if (salary1 >salary2 && salary1>salary3)
+//	{
+//		cout << "Maximun salary:" << salary1 << endl;
+//	}
+//	else
+//	{
+//		if (salary2 > salary3)
+//		{
+//			cout << "Maximun salary:" << salary2 << endl;
+//		}
+//		else
+//		{
+//			cout << "Maximun salary:" << salary3 << endl;
+//		}
+//	}
+//
+//	//Minimum hesaplama
+//	if (salary1 <salary2 && salary1<salary3)
+//	{
+//		cout << "Minimun salary:" << salary1 << endl;
+//	}
+//	else
+//	{
+//		if (salary2 < salary3)
+//		{
+//			cout << "Minimun salary:" << salary2 << endl;
+//		}
+//		else
+//		{
+//			cout << "Minimun salary:" << salary3 << endl;
+//		}
+//	}
+//
+//	system("pause");
+//	return 0;
+//}
