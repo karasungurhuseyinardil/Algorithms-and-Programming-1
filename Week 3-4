@@ -1,0 +1,284 @@
+Write a program that asks the user to enter two numbers, obtains the two numbers from the user and prints the sum, product, difference, and quotient of the two numbers.
+
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int num1;
+	int num2;
+
+	cout << "Enter two integers : " << endl;
+	cin >> num1 >> num2;
+
+	cout << "The sum is : " << num1 + num2<<endl;
+	cout << "The product is : " << num1 * num2;
+	cout << "\nThe difference is : " << num1  - num2 << endl;
+	cout << "The quotient is: " << num1 / num2 << endl;
+
+	system("pause");
+	return 0;
+}
+
+
+Write a program that prints the numbers 1 to 4 on the same line with each pair adjacent numbers separated by one space.
+
+Write the program using the following methods :
+a)	Using one output statement with one stream insertion operator.
+b)	Using one output statement with four stream insertion operator.
+c)	Using four output statements
+
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	// part A
+	cout <<"1 2 3 4 \n";
+	// part B
+	cout <<"1 "<<"2 "<<"3 "<<"4 \n";
+	// part C
+	cout << "1 "; 
+	cout << "2 ";
+	cout << "3 ";
+	cout << "4 "<<endl;
+	
+	system("pause");
+	return 0;
+}
+
+
+
+
+//COME107-Lab-Week3-4
+//Example 1-v1
+//Write a C++ program that takes length and width of //rectangle and display the area (result) on the screen.
+
+
+
+  #include<iostream>
+  using namespace std;
+ 
+   int main()
+    {
+      int width;
+      int length;
+      int area;
+ 
+      cout << "Enter length value of rectangle : "<<endl;
+      cin >> length;
+      
+      cout << "Enter width value of rectangle : "<<endl;
+      cin >> width;
+ 
+      area = length*width;
+ 
+      cout << "The area result :" << area << endl << "\n";
+ 
+      system("pause");
+      return 0;
+ }
+
+
+
+//Example 1-v2
+//Write a C++ program that takes length and width of //rectangle and display the area(result) on the screen.
+
+  #include<iostream>
+  using namespace std;
+ 
+  int main()
+   {
+      double width, length;
+ 
+      cout << "Enter length value of rectangle:";
+      cin >> length;
+      
+      cout << "Enter width value of rectangle:";
+      cin >> width;
+ 
+      cout << "The area result : " << length * width<< endl << "\n";
+ 
+      system("pause");
+      return 0;
+     
+//Example 2-v1
+//Write a C++ program that takes length, width and height //of rectangular prism and display the volume on the screen.
+
+
+   #include<iostream>
+   using namespace std;
+  
+   int main()
+    {
+      double length;
+      double width;
+      double height;
+      double volume;
+ 
+      cout << "Enter length value of rectangular prism: ";
+      cin >> length;
+ 
+      cout << "Enter width value of rectangular prism: ";
+      cin >> width;
+ 
+      cout << "Enter height value of rectangular prism: ";
+      cin >> height;
+ 
+      volume = length*width*height;
+ 
+      cout << "The volume result  : " <<  volume<< endl << "\n";
+ 
+      system("pause");
+      return 0;
+     } 
+
+
+
+
+
+
+
+//Example 2-v2
+//Write a C++ program that takes length, width and height //of rectangular prism and display the volume on the screen.
+
+
+   #include<iostream>
+   using namespace std;
+  
+   int main()
+    {
+      double length,width,height;
+      
+      cout << "Enter length value of rectangular prism : "<<endl;
+      cin >> length;
+ 
+      cout << "Enter width value of rectangular prism : "<<endl;
+      cin >> width;
+ 
+      cout << "Enter height value of rectangular prism : " <<endl;
+      cin >> height;
+ 
+     cout << "The volume result : " << length*width*height <<endl;
+ 
+      system("pause");
+      return 0;
+      }
+
+
+
+
+
+
+
+
+
+//Example 3
+//Write a C++ program that takes two numbers from user and //display the division (result) on the screen.
+
+
+   #include<iostream>
+   using namespace std;
+  
+   int main()
+    {
+     int number1, number2, result;
+ 
+      cout << "Enter first number :"<<endl;
+      cin >> number1;
+ 
+      cout << "Enter second number :"<<endl;
+      cin >> number2;
+ 
+      result = number1 / number2;
+ 
+      cout << "\n  The division result : " << result << endl;
+ 
+      system("pause");
+      return 0;
+     }
+
+//Example 3 with double variables
+//Write a C++ program that takes two numbers from user and //display the division (result) on the screen.
+
+ 
+   #include<iostream>
+   using namespace std;
+  
+   int main()
+    {
+      double number1, number2, result;
+ 
+      cout << "Enter first number :"<<endl;
+      cin >> number1;
+ 
+      cout << "Enter second number :"<<endl;
+      cin >> number2;
+ 
+      result = number1 / number2;
+ 
+      cout << "\n  The division result : " << result << endl;
+ 
+      system("pause");
+      return 0;
+     }
+
+//Example 4
+//Write a C++ program that takes three numbers from user //and display the following equation result on the screen.
+// Result = (x + y) % (z - 3)
+
+
+   #include<iostream>
+   using namespace std;
+  
+   int main()
+    {
+       int x, y, z, result;
+  
+ 	cout << "Enter first number : "<<endl;
+ 	cin >> x;
+ 
+ 	cout << "Enter second number : "<<endl;
+ 	cin >> y;
+ 
+ 	cout << "Enter third number: " <<endl;
+ 	cin >> z;
+ 
+ 	result = (x + y) % (z - 3);
+ 
+ 	cout << "\n The result : " << result << endl;
+ 
+ 	system("pause");
+ 	return 0;
+     }
+ 
+//Example 5
+//Write a C++ program that takes two numbers from user and //displays the following equation result on the screen.
+// Result = x*x+y*3
+
+   #include<iostream>
+   using namespace std;
+ 
+   int main()
+   {
+	double x;
+	double y;
+	double result;
+
+	cout << "Enter first number : "<<endl;
+	cin >> x;
+
+	cout << "Enter second number : " <<endl;
+	cin >> y;
+
+	result = x*x + y * 3;
+	
+	cout << "Result is " << result << endl;
+
+	system("pause");
+	return 0;
+    }
+
+
