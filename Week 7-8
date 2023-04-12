@@ -1,0 +1,600 @@
+ //COME107-Lab-Week7-8
+ 
+/*Example1-v1
+Write a C++ program that calculates and displays the average of odd numbers between 1 and 
+the integer number entered by user.
+NOTE1: You need to count and find summation result of odd numbers between 1 and the 
+integer number entered by user.
+NOTE2: Use while repetition control structure
+*/
+
+//#include<iostream>
+//using namespace std;
+//
+//int main()
+//{
+//     double number, average;
+//     double sum = 0; int count = 0;
+//
+//     cout << "Example1-v1" << endl;
+//     cout << "Enter an integer number(>1):";
+//     cin >> number;
+//
+//     int i = 1;
+//     while (i <= number)
+//     {
+//           sum = sum+i;
+//           count++;
+//           i = i + 2;
+//     }
+//    
+//     average = sum / count;
+//     cout << "Average of odd numbers= " << average << endl;
+//
+//     system("pause");
+//     return 0;
+//}
+
+/*Example1-v2
+Write a C++ program that calculates and displays the average of odd numbers between 1 and 
+the integer number entered by user.
+NOTE1: You need to count and find summation result of odd numbers between 1 and the 
+integer number entered by user.
+NOTE2: Use for repetition control structure
+*/
+//
+//#include<iostream>
+//using namespace std;
+//
+//int main()
+//{
+//     double number, average;
+//     double sum = 0; int count = 0;
+//
+//     cout << "Example1-v2" << endl;
+//     cout << "Enter an integer number(>1):";
+//     cin >> number;
+//
+//     for (int i = 1; i <= number;i = i + 2)
+//     {
+//           sum = sum + i;
+//           count++;
+//     }
+//    
+//     average = sum / count;
+//     cout << "Average of odd numbers= " << average << endl;
+//
+//     system("pause");
+//     return 0;
+//}
+
+/*Example2-v1
+Write a C++ program that calculates and displays the average of odd numbers between 1 and 
+the integer number entered by user except 3 and 7.
+NOTE1: You need to count and find summation result of odd numbers between two integer numbers entered by user except 3 and 7.
+NOTE2: Use while repetition control structure
+*/
+
+//#include<iostream>
+//using namespace std;
+//
+//int main()
+//{
+//     double number, average;
+//     double sum = 0; int count = 0;
+//
+//     cout << "Example2-v1" << endl;
+//     cout << "Enter an integer number:";
+//     cin >> number;
+//
+//     int i = 1;
+//     while (i <= number)
+//     {
+//           if (i != 3 && i != 7)
+//           {
+//                  sum = sum + i;
+//                  count++;
+//           }
+//           i = i + 2;
+//     }
+//
+//     average = sum / count;
+//     cout << "Average of odd numbers= " << average << endl;
+//
+//     system("pause");
+//     return 0;
+//}
+
+/*Example2-v2
+
+Write a C++ program that calculates and displays the average of odd numbers between 1 and 
+the integer number entered by user except 3 and 7.
+NOTE1: You need to count and find summation result of odd numbers between two integer 
+numbers entered by user except 3 and 7.
+NOTE2: Use for repetition control structure
+*/
+//
+//#include<iostream>
+//using namespace std;
+//
+//int main()
+//{
+//     double number, average;
+//     double sum = 0; int count = 0;
+//
+//     cout << "Example2-v2" << endl;
+//     cout << "Enter an integer number:";
+//     cin >> number;
+//
+//     for (int i = 1; i <= number;i = i + 2)
+//     {
+//           if (i != 3 && i != 7)
+//           {
+//                  sum = sum + i;
+//                  count++;
+//           }
+//     }
+//
+//     average = sum / count;
+//     cout << "Average of odd numbers= " << average << endl;
+//
+//     system("pause");
+//     return 0;
+//}
+
+
+/*Example3-v1
+Write a C++ program that calculates and displays the average of even numbers between two
+integer numbers entered by user.
+NOTE1: After taking the integer numbers from user you should specify the minimum and 
+maximum numbers. Then, you need to count and find summation result of even numbers 
+between two integer numbers entered by user.
+NOTE2: Use while repetition control structure
+*/
+
+//#include<iostream>
+//using namespace std;
+//
+//int main()
+//{
+//     int number1, number2, min, max, sum, count;
+//     double average;
+//
+//     cout << "Example3-v1"<<endl;
+//     cout << "Enter two integer numbers:";
+//     cin >> number1 >> number2;
+//    
+//    
+//     if (number1 > number2)
+//     {
+//           max = number1;
+//           min = number2;
+//     }
+//     else
+//     {
+//           max = number2;
+//           min = number1;
+//     }
+//
+//     sum = 0;
+//     count = 0;
+//     int i = min;
+//     while (i <= max)
+//     {
+//           if (i % 2 == 0)
+//           {           
+//                  sum = sum + i;
+//                  count++;
+//                  cout << count<<". even number:"<<i << endl;
+//           }
+//           i++;//i=i+1;
+//     }
+//    
+//     average = static_cast<double>(sum) / count;
+//     cout << "Average result: " << average << endl;
+//
+//     system("pause");
+//     return 0;
+//}
+
+/*Example3-v2
+Write a C++ program that calculates and displays the average of even numbers between 
+two integer numbers entered by user.
+NOTE1: After taking the integer numbers from user you should specify the minimum and 
+maximum numbers. Then, you need to count and find summation result of even numbers 
+between two integer numbers entered by user.
+NOTE2: Use for repetition control structure
+*/
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+     int number1, number2, min, max, sum, count;
+     double average;
+
+     cout << "Example3-v2"<<endl;
+     cout << "Enter two integer numbers:";
+     cin >> number1 >> number2;
+    
+    
+     if (number1 > number2)
+     {
+           max = number1;
+           min = number2;
+     }
+     else
+     {
+           max = number2;
+           min = number1;
+     }
+
+     sum = 0;
+     count = 0;
+	 for (int i = min; i <= max; i++)
+     {
+           if (i % 2 == 0)
+           {           
+                  sum = sum + i;
+                  count++;
+                  cout << count<<". even number:"<<i << endl;
+           }
+          
+     }
+    
+     average = static_cast<double>(sum) / count;
+     cout << "Average result: " << average << endl;
+
+     system("pause");
+     return 0;
+}
+
+/*Example4
+Write a C++ program that print following triangle using *
+*
+* *
+* * *
+* * * *
+* * * * *
+
+*/
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int rows;
+
+    cout << "Enter number of rows: ";
+    cin >> rows;
+
+    for(int i = 1; i <= rows; ++i)
+    {
+        for(int j = 1; j <= i; ++j)
+        {
+            cout << "* ";
+        }
+        cout << "\n";
+    }
+    return 0;
+}
+*/
+
+/*Example6
+Write a C++ program that print following triangle using alphabets
+A
+B B
+C C C
+D D D D
+E E E E E
+
+*/
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    char input, alphabet = 'A';
+
+    cout << "Enter the uppercase character you want to print in the last row: ";
+    cin >> input;
+
+    for(int i = 1; i <= (input-'A'+1); ++i)
+    {
+        for(int j = 1; j <= i; ++j)
+        {
+            cout << alphabet << " ";
+        }
+        ++alphabet;
+
+        cout << endl;
+    }
+    return 0;
+}
+*/
+
+
+/*Example7
+Write a C++ program that print following triangle using *
+
+* * * * *
+* * * *
+* * *
+* *
+*
+
+*/
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int rows;
+
+    cout << "Enter number of rows: ";
+    cin >> rows;
+
+    for(int i = rows; i >= 1; --i)
+    {
+        for(int j = 1; j <= i; ++j)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    
+    return 0;
+}
+
+*/
+
+
+
+/*Example8
+Write a C++ program that print following triangle using numbers
+
+1 2 3 4 5
+1 2 3 4 
+1 2 3 
+1 2
+1
+
+*/
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int rows;
+
+    cout << "Enter number of rows: ";
+    cin >> rows;
+
+    for(int i = rows; i >= 1; --i)
+    {
+        for(int j = 1; j <= i; ++j)
+        {
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+*/
+
+/*Example9:
+Write a C++ program that calculates and display squareroot of the number 
+entered by user.
+
+*/
+
+//#include<iostream>
+//#include<cmath>
+//using namespace std;
+//
+//int main()
+//{
+//	double number;
+//	double result;
+//
+//	cout << "Example5" << endl;
+//	cout << "Enter a number:";
+//	cin >> number;
+//
+//	result = sqrt(number);
+//	cout << "Squareroot:" << result << endl;
+//
+//	system("pause");
+//	return 0;
+//}
+
+/*Example10:
+Write a C++ program that calculates and display 3rd power of the number 
+entered by user.
+//*/
+//
+//#include<iostream>
+//#include<cmath>
+//using namespace std;
+//
+//int main()
+//{
+//	double number;
+//	double result;
+//
+//	cout << "Example6" << endl;
+//	cout << "Enter a number:";
+//	cin >> number;
+//
+//	result = pow(number, 3);
+//	cout << "3.Power:" << result << endl;
+//
+//	system("pause");
+//	return 0;
+//}
+
+
+/*Example11:
+Write a C++ program that calculates and display following equation result. 
+x value will be entered by user.
+
+y = ((x ^ 5 + 2)) ^(1.0/2) / ((3x ^ 2 + 1))
+
+
+
+*/
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+	double x, result;
+
+	cout << "Example7" << endl;
+	cout << "Enter a number:";
+	cin >> x;
+
+	result = sqrt(pow(x, 5) + 2) / (3 * pow(x, 2) + 1);
+	cout << "Result= " << result << endl;
+
+	system("pause");
+	return 0;
+}
+
+
+
+
+
+/*Example12
+Write a C++ program that calculates and display following equation result.
+x value will be entered by user.
+
+y=((x^4+3) )/((5x^2+1))^(1.0/3)
+
+OR
+
+y=∛((x^4+3) )/((5x^2+1))
+
+*/
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+	double x, result;
+
+	cout << "Example8" << endl;
+	cout << "Enter a number:";
+	cin >> x;
+	
+
+	result = pow( static_cast<double>((pow(x, 4) + 3) / (5 * pow(x, 2) + 1)),(1.0/3));
+
+	
+
+	cout << "Result= " << result << endl;
+
+	system("pause");
+	return 0;
+}
+
+/* Example 13: Write the program that converts the Fahrenheit temperature entered in the main program to degrees with the function called convert and displays the converted result in the main program. To convert: Use the formula C = (F-32) /1.8.  */
+
+
+#include<iostream>
+using namespace std;
+
+
+
+double convert(double n)
+{
+	return ((n - 32) / 1.8);
+
+
+}
+	int main()
+	{
+
+		int F;
+		double C;
+
+	cout << "Enter Fahrenheit degree" << endl;
+
+	cin >> F;
+	
+	C = convert(F);
+
+
+	
+
+	cout << C << " degree "  << endl;
+
+	system("pause");
+	return 0;
+}
+
+
+/* Example 14: Write the program that shows your address information in the function named My Business Card ().*/
+
+#include<iostream>
+using namespace std;
+void My_Busines_Card()
+{
+	cout << (" Dr. Birsen Gülden Özdemir\n");
+	cout << ("DOU\nISTANBUL\n");
+
+}
+
+int main()
+{
+	My_Busines_Card();
+	
+	system("pause");
+
+	return 0;
+
+}
+
+/* Example 15: Write the program that tells you whether a number entered on the keyboard is odd or even.
+
+*/
+#include<iostream>
+using namespace std;
+
+int decision(int x)
+{
+	if ((x % 2) == 0)
+		return 1;
+	else
+		return 0;
+
+}
+
+int main()
+{
+	int b;
+	cout << " Enter a number  ";
+	cin >> b;
+
+	if (decision(b) == 0)
+		cout << "Odd number\n";
+	else
+		cout << " Even number \n "; 
+
+	
+	system("pause");
+
+	return 0;
+
+}
+
