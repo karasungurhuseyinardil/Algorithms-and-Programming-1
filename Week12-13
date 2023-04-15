@@ -1,0 +1,597 @@
+//COME107-Week12-13
+
+//Q1-v1
+//Write the program that transfers random numbers between 1 and 6 
+//to an A array with 10 elements and displays them on the screen.
+//
+
+//#include<iostream>
+//#include<stdlib.h> 
+//#include<time.h>
+//using namespace std;
+//int main()
+//{
+//	srand(time(0));
+//	int i;
+//	int A[10];
+//	for (i = 0; i < 10; i++)
+//	{
+//		A[i] = 1 + (int)rand() % 6;
+//		cout << " " << A[i];
+//
+//	}
+//
+//	cout << endl;
+//
+//	system("pause");
+//	return 0;
+//
+//}
+
+//Q1-v2
+//Write the program that transfers random numbers between 1 and 6 
+//to an A array with 10 elements and displays them on the screen.
+//(use function(s))
+
+//#include<iostream>
+//#include<stdlib.h> 
+//#include<time.h>
+//
+//using namespace std;
+//
+//int NumberRandom()
+//
+//{
+//
+//	int number;
+//
+//	number = rand() % 6 + 1;
+//
+//
+//
+//	return number;
+//
+//}
+//
+//
+//
+//void showArray(int temp[])
+//
+//{
+//
+//	for (int i = 0; i < 10; i++)
+//
+//	{
+//
+//		cout << "Elements[" << i << "] = " << temp[i] << endl;
+//
+//	}
+//
+//}
+//
+//
+//
+//
+//
+//int main()
+//
+//{
+//
+//	srand(time(NULL));
+//
+//	int elements[10];
+//
+//	int number;
+//
+//
+//
+//	for (int i = 0; i < 10; i++)
+//
+//	{
+//
+//		number = NumberRandom();
+//
+//		elements[i] = number;
+//
+//	}
+//
+//
+//
+//	showArray(elements);
+//
+//	system("pause");
+//
+//	return 0;
+//
+//}
+
+//Q2
+//Write the program that creates the array in the form of  
+// "0, 1, 4, 9, 16, 25, 36, 49, 64, 81" and displays it on the screen.
+
+//Q2
+//Write the program that creates the array in the form of  
+//"0, 1, 4, 9, 16, 25, 36, 49, 64, 81" and displays it on the screen.
+//
+//#include<iostream>
+//#include<stdlib.h> 
+////#include<cmath>
+//
+//using namespace std;
+//int main()
+//{
+//
+//	int i;
+//	int Z[10];
+//	for (i = 0; i < 10; i++)
+//	{
+//		Z[i] = i * i;
+//		//Z[i] =pow(i,2);
+//		cout << " " << Z[i];
+//
+//	}
+//	cout << endl;
+//	system("pause");
+//	return 0;
+//
+//}
+//
+//Q3-v1
+//Write the program that creates the array in the form of  
+//" 0, 1, 2, 3, 4, 5, 5, 4, 3, 2, 1, 0" and displays it on the screen.
+//
+//#include<iostream>
+//#include<stdlib.h> 
+//
+//using namespace std;
+//int main()
+//{
+//
+//	int i, Z[12];
+//	for (i = 0; i < 12; i++)
+//	{
+//		if (i < 6)
+//		{
+//			Z[i] = i;
+//		}
+//		else
+//		{
+//			Z[i] = 11 - i;
+//		}
+//
+//		cout << " " << Z[i];
+//
+//	}
+//	cout << endl;
+//	system("pause");
+//	return 0;
+//
+//}
+
+//Q3-v2
+//Write the program that creates the array in the form of  
+//" 0, 1, 2, 3, 4, 5, 5, 4, 3, 2, 1, 0" and displays it on the screen.
+//
+
+//#include <iostream>
+//#include <iomanip>
+//#include <cmath>
+//
+//using namespace std;
+//
+//
+//void SetElements();
+//
+//void ShowArray(int temp[], int size)
+//
+//{
+//
+//	for (int i = 0; i < size; i++)
+//
+//	{
+//		if(i<size-1)
+//			cout << temp[i] << ", ";
+//		else
+//			cout << temp[i] ;
+//
+//	}
+//
+//}
+//
+//
+//
+//int main()
+//
+//{
+//
+//	SetElements();
+//
+//	cout << endl;
+//	system("pause");
+//	return 0;
+//
+//}
+//
+//void SetElements()
+//
+//{
+//
+//	const int size = 12;
+//
+//	int elements[size];
+//
+//	for (int i = 0; i < size; i++)
+//
+//	{
+//
+//		if (i < 6)
+//
+//		{
+//
+//			elements[i] = i;
+//
+//		}
+//
+//		else
+//
+//		{
+//
+//			elements[i] = size - (i + 1);
+//
+//		}
+//
+//	}
+//
+//	ShowArray(elements, size);
+//
+//}
+//Q4-v1
+//Write the program that transfers the entered 5 numbers from user 
+//to the A sequence and prints them on the screen.
+//#include<iostream>
+//
+//
+//using namespace std;
+//int main()
+//{
+//
+//	int i, A[5], number;
+//	for (i = 0; i < 5; i++)
+//	{
+//		cout << i + 1 << " .number :  ";
+//		cin >> number;
+//		A[i] = number;
+//	}
+//	cout << " A sequence :\n";
+//	for (i = 0; i < 5; i++)
+//	{
+//		cout << "A[" << i << "]=" << A[i] << endl;
+//	}
+//
+//	cout << endl;
+//	system("pause");
+//	return 0;
+//
+//}
+
+//Q4-v2
+//Write the program that transfers the entered 5 numbers from user 
+//to the A sequence and prints them on the screen.
+//(use function definitions)
+
+//#include <iostream>
+//
+//#include <iomanip>
+//
+//#include <cmath>
+//
+//using namespace std;
+//
+//
+//
+//void ShowNumbers(int temp[], int size);
+//
+//void SetNumber();
+//
+//
+//
+//int main()
+//
+//{
+//
+//	SetNumber();
+//
+//	system("pause");
+//
+//	return 0;
+//
+//}
+//
+//
+//
+//void ShowNumbers(int temp[], int size)
+//
+//{
+//
+//	for (int i = 0; i < size; i++)
+//
+//	{
+//
+//		cout << "Number[" << i << "]= " << temp[i] << endl;
+//
+//	}
+//
+//}
+//
+//
+//
+//void SetNumber()
+//
+//{
+//
+//	const int size = 5;
+//
+//	int numbers[size];
+//
+//	int input;
+//
+//
+//
+//	cout << "Enter a number to put it into array" << endl;
+//
+//
+//
+//	for (int i = 0; i < size; i++)
+//
+//	{
+//
+//		cout << "Number[" << i << "] = ";
+//
+//		cin >> input;
+//
+//		numbers[i] = input;
+//
+//	}
+//
+//	cout << endl;
+//
+//	cout << "********************************" << endl;
+//
+//	ShowNumbers(numbers, size);
+//
+//}
+
+//
+//
+//Q5
+//Write the program that calculates the month of the year according to 
+//the entered number value from user, displays it on the screen, 
+//and gives a warning message to the user if the month value is not enter 
+//between 1 and 12.
+//
+//#include<iostream>
+//
+//using namespace std;
+//int main()
+//{
+//	string A[] = { "","January","February","March","April","May","June","July","August","September","October","November","December" };
+//	int month;
+//    
+//    Line378: cout << "Enter month number" << endl;
+//	cin >> month;
+//	if (month > 0 && month < 12)
+//	{
+//		cout << month << ". month  : " << A[month] << endl;
+//	}
+//	else {
+//		cout << "wrong number!";
+//		goto Line378;
+//	}
+//	return 0;
+//
+//}
+
+
+//Q6.
+//Write the program that changes the amount of money entered from the user 
+//with the least amount of money according to 200 - 100 - 50 - 20 - 10 - 5 - 1.
+//
+//Enter amount of money : 457
+//2adet 200 TL
+//1adet 50 TL
+//1adet 5 TL
+//2adet 1 TL
+
+//#include<iostream>
+//
+//using namespace std;
+//int main()
+//{
+//	int money, i, Sa;
+//	int K[] = { 200,100,50,20,10,5,1 };
+//	cout << "Enter amount of money : ";
+//	cin >> money;
+//	for (i = 0; i <= 6; i++)
+//	{
+//		Sa = (int)money / K[i];
+//		money = money - Sa * K[i];
+//		if (Sa != 0)
+//		{
+//			cout << Sa << "piece " << K[i] << " TL" << endl;
+//
+//		}
+//	}
+//	
+//	cout << endl;
+//	system("pause");
+//	return 0;
+//
+//}
+
+//
+//Q7
+//Write the program that gives the number of failures and passes in a course attended
+//by 15 student. (The computer with the “takeNotes” function will randomly generate 
+//Lecture notes.) (notes<50 should be counted as failures)
+//
+//#include<iostream>
+//#include <stdlib.h>
+//#include< time.h>
+//using namespace std;
+//const int student = 15;
+//
+//void takeNotes(int Nt[])
+//{
+//	srand(time(0));
+//	int i;
+//	for (i = 0; i < student; i++)
+//	{
+//		Nt[i] = 1 + rand() % 100;
+//		cout << Nt[i] << endl;
+//
+//	}
+//
+//}
+//
+//int main()
+//{
+//	cout << "Course success notes:" << endl;
+//	int i, failures = 0, Note[student];
+//	int PassNote = 50;
+//	
+//	takeNotes(Note);
+//	for (i = 0; i < student; i++)
+//	{
+//		if (Note[i] < PassNote) failures++;
+//
+//	}
+//	cout << endl;
+//	cout << "Failures : " << failures << endl;
+//	cout << "Passes   : " << student - failures;
+//
+//	cout << endl;
+//	system("pause");
+//	return 0;
+//
+//}
+
+//Q8
+//Write the program that creates the following matrix
+//	1  2   3   4
+//	5  6   7   8
+//	9  10  11  12
+//	
+[■(1&2&3&4@5&6&7&8@9&10&11&12)]
+
+//
+//#include<iostream>
+//
+//using namespace std;
+//
+//
+//int main()
+//{
+//	int i, j;
+//	int A[3][4];
+//	for (i = 0; i < 3; ++i)
+//	{
+//		for (j = 0; j < 4; ++j)
+//		{
+//
+//			A[i][j] = (i * 4) + j + 1;
+//			cout << "   " << A[i][j] << "   ";
+//
+//		}
+//
+//		cout << endl;
+//
+//	}
+//	cout << endl;
+//	system("pause");
+//	return 0;
+//
+//}
+
+
+//Q9
+//Write the program that creates the 5x5 dimensional identity matrix.
+//
+//#include<iostream>
+//
+//using namespace std;
+//
+//
+//int main()
+//{
+//	int i, j;
+//	int A[5][5];
+//	for (i = 0; i < 5; ++i)
+//	{
+//		for (j = 0; j < 5; ++j)
+//		{
+//			if (i == j)
+//			{
+//				A[i][j] = 1;
+//			}
+//			else
+//			{
+//				A[i][j] = 0;
+//			}
+//
+//			cout << "   " << A[i][j] << "   ";
+//
+//
+//		}
+//
+//		
+//		cout << endl;
+//
+//	}
+//
+//	cout << endl;
+//	system("pause");
+//	return 0;
+//
+//}
+//
+//Q10
+//Write the program that creates the following matrix
+//	0  1  2  3  4
+//	0  1  2  3  4
+//	0  1  2  3  4
+//
+[■(0&1&2&3&4@0&1&2&3&4@0&1&2&3&4)]
+
+//#include<iostream>
+//
+//using namespace std;
+//
+//
+//int main()
+//{
+//	int i, j;
+//	int A[3][5];
+//	for (i = 0; i < 3; ++i)
+//	{
+//		for (j = 0; j < 5; ++j)
+//		{
+//
+//
+//			A[i][j] = j;
+//
+//
+//			cout << "   " << A[i][j] << "   ";
+//
+//		}
+//
+//		cout << endl;
+//
+//	}
+//
+//	cout << endl;
+//	system("pause");
+//	return 0;
+//
+//}
+//
+//
